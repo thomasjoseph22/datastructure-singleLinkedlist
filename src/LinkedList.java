@@ -100,4 +100,24 @@ public class LinkedList{
         }
     }
 
+    public boolean insert(int index,int value){
+        if(index<0||index>length){
+            return false;
+        }
+        if(index==0){
+            prepand(value);
+            return true;
+        }
+        else if (index==length){
+            append(value);
+            return true;
+        }
+        Node newnode = new Node(value);
+        Node temp = get(index-1);
+        newnode.next=temp.next;
+        temp.next=newnode;
+        length++;
+        return true;
+    }
+
 }

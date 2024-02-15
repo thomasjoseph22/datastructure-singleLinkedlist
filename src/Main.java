@@ -22,6 +22,9 @@ public class Main{
         kd.set(2,550);
         System.out.println("after the set method : ");
         kd.printfd();
+        System.out.println("Enter the element you want to and the position : ");
+        kd.insert(2,43);
+        kd.printfd();
 
 
     }
