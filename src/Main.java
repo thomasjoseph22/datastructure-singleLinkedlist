@@ -25,6 +25,9 @@ public class Main{
         System.out.println("Enter the element you want to and the position : ");
         kd.insert(2,43);
         kd.printfd();
+        System.out.println("after removing : ");
+        kd.remove(2);
+        kd.printfd();
 
 
     }
